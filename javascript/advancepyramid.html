@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>advancepyramid</title>
+    <script>
+      var rows = prompt();
+
+      var i, j, k;
+
+      // pattern 1
+      for (i = 1; i <=rows; i++) {
+        for (j = 1; j < i; j++) {
+          document.write("* ");
+        }
+        document.write("<br>");
+      }
+
+// pattern 2
+      for (i = 1; i <=rows; i++) {
+        for (k = rows-i; k > 1; k--) {
+          document.write("* ");
+        }
+        for (j = 1; j < i; j++) {
+          document.write(" ");
+        }
+        document.write("<br>");
+      }
+// pattern 3
+      for (i = 1; i <=rows; i++) {
+        for (k = 1; k<=rows-i; k++) {
+          document.write(" ");
+        }
+        for (j = 1; j < i; j++) {
+          document.write("* ");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+<!-- 1
+    1 1
+   1 1 1
+  1 1 1 1   
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            sort Numbers
+        </title>
+        <script>
+           function sort(){
+        var a = Number(document.getElementById("first").value) ;
+        var b = Number(document.getElementById("second").value) ;
+        var c = Number(document.getElementById("third").value) ;
+
+         if(a>b && b>c){
+             alert(a + ", " + b + "," + c + ",")
+         }else if (a>c && c>b){
+            alert(a + ", " + c + "," + b + ",")
+         }else if (b>a && a>c){
+            alert(b + ", " + a + "," + c + ",")
+         }else if (b>c && c>a){
+            alert(b + ", " + c + "," + a + ",")
+         }else if (c>b && b>a){
+            alert(c + ", " + b + "," + a + ",")
+         }else {
+            alert(c + ", " + a + "," + b + ",")
+         }     
+           }
+      
+        </script>
+    </head>
+    <body>
+       <h1>Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result.</h1>
+       Enter the first number: <input type="number" id="first"></br></br>
+       Enter the second number: <input type="number" id="second"></br></br>
+       Enter the third number: <input type="number" id="third"></br></br>
+       <button onclick="sort()" >Answer</button></br>
+       <p id="answer"></p>
+       <img src="sort-numbers.jpg" style="width: 1000px; transform: rotate(270deg); float: right; margin-top: 100px;" >
+    </body>
+</html>
+<!-- a b c
+a c b 
+b a c 
+b c a 
+c b a 
+c a b -->
