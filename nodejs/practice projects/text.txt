@@ -1,0 +1,1 @@
+this is frst file for notes app created by node jsusing append function we have appended following line to text.txt file
